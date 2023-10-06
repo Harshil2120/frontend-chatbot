@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+    margin:0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: black;
+        }
+        #message-container {
+        border: 1px solid black;
+        flex-grow: 1;
+        overflow-y: auto;
+        }
+
+        #message-input{
+            background-color: grey;
+            resize: none;
+            width: 90%;
+            height: 80px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        #send-button{
+width:4%;
+height: 60px;
+border-radius: 5px;
+font-size: 16px;
+        }
+#form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+        #message-container div{
+            background-color: #f2f2f2;
+        }
+        footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+}
+#empty{
+    margin-top: 80px;
+}
+.navbar {
+    text-align: center;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Anxitey ChatBot</h1>
+      </div>
+      <div id="empty"></div>
+        <div id="message-container"></div>
+        <footer>
+            <form id="form"> <textarea id="message-input" placeholder="Enter the Prompt here..."></textarea>
+                <button type="submit" id="send-button">Send</button>
+            </form>
+        </footer>
+        
+        <script src="./script.js" type="module"></script>
+</body>
+</html>
